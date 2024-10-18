@@ -7,9 +7,9 @@ int main() {
     int opcion;
     ingresar_productos(nombres, precios, &num_productos);
     do {
-        printf("\n--- Menú de Inventario ---\n");
-        printf("1. Mostrar el producto más caro\n");
-        printf("2. Mostrar el producto más barato\n");
+        printf("\n--- Menu de Inventario ---\n");
+        printf("1. Mostrar el producto mas caro\n");
+        printf("2. Mostrar el producto mas barato\n");
         printf("3. Buscar producto por nombre\n");
         printf("4. Calcular el precio total del inventario\n");
         printf("5. Calcular el precio promedio\n");
@@ -37,7 +37,7 @@ int main() {
                 printf("Saliendo del programa...\n");
                 break;
             default:
-                printf("Opción no válida. Intente de nuevo.\n");
+                printf("Opcion no valida. Intente de nuevo.\n");
         }
     } while (opcion != 6); 
 

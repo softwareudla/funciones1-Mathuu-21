@@ -3,7 +3,7 @@
 #include "funciones.h"
 
 void ingresar_productos(char nombres[][50], float precios[], int *num_productos) {
-    printf("¿Cuántos productos desea ingresar (máx 10)? ");
+    printf("¿Cuantos productos desea ingresar (max 10)? ");
     scanf("%d", num_productos);
 
     for (int i = 0; i < *num_productos; i++) {
@@ -31,7 +31,7 @@ void encontrar_mas_caro(char nombres[][50], float precios[], int num_productos) 
         }
     }
 
-    printf("Producto más caro: %s con un precio de %.2f\n", nombres[indice_mas_caro], precios[indice_mas_caro]);
+    printf("Producto mas caro: %s con un precio de %.2f\n", nombres[indice_mas_caro], precios[indice_mas_caro]);
 }
 
 void encontrar_mas_barato(char nombres[][50], float precios[], int num_productos) {
@@ -43,7 +43,7 @@ void encontrar_mas_barato(char nombres[][50], float precios[], int num_productos
         }
     }
 
-    printf("Producto más barato: %s con un precio de %.2f\n", nombres[indice_mas_barato], precios[indice_mas_barato]);
+    printf("Producto mas barato: %s con un precio de %.2f\n", nombres[indice_mas_barato], precios[indice_mas_barato]);
 }
 float calcular_promedio(float precios[], int num_productos) {
     float total = calcular_total(precios, num_productos);
